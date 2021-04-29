@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(77, 77, 77);
+}
+
+.commandments {
+  border: 2px solid rgb(202, 172, 0);
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(70, 70, 70);
+}
+
+.commandments__title {
+  display: flex;
+  color: rgb(202, 172, 0);
+  justify-content: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+.commandment {
+  position: relative;
+  width: 60rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 102, 255, 0),
+    rgba(87, 154, 255, 0.25)
+  );
+  border-bottom: 1px solid rgb(202, 172, 0);
+  transition: all 0.5s linear;
+}
+.commandment__title {
+  color: rgb(206, 206, 206);
+  display: flex;
+  flex-direction: row;
+}
+.commandment__title h4 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.commandment__title i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.commandment__content {
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.commandment__content p {
+  font-weight: bold;
+  color: rgb(172, 172, 172);
+}
+
+.commandment__content input {
+  min-width: 40px;
+}
+.commandment__content i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: rgb(202, 172, 0);
+  border: 1px solid red;
+}
+.fa-caret-down {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  left: 50%;
+  transform: translate(-50%, -12px);
+  color: rgb(202, 172, 0);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-40%);
+}
+
+.code-of-conduct {
+  color: rgb(172, 172, 172);
+}
+
+.code-of-conduct a {
+  color: rgb(0, 145, 202);
+}
+
+#accept-commandments {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(202, 172, 0);
+  color: rgb(202, 172, 0);
+  background: linear-gradient(to bottom, rgb(146, 124, 0), rgb(105, 90, 0));
+  margin: 0.5rem;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.25;
+}
